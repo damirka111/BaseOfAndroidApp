@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="false"
+    android:background="@drawable/i"
+    android:paddingTop="20dp"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="20dp"
+        android:text="QUANTITY"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonPluss"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="9dp"
+        android:text="+"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/qounterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/buttonPluss"
+        android:text="0"
+        android:textColor="#CEFFFFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="9dp"
+        android:layout_toEndOf="@id/qounterTextView"
+        android:text="-"
+        android:textColor="@android:color/holo_orange_light"
+        android:textColorHighlight="#EA0909"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonMinus"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="20dp"
+        android:text="Price"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/PriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="20dp"
+        android:text="Free"
+        android:textColor="#BEFFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PriceTextView"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="20dp"
+        android:text="ORDER"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonOrder"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="9dp"
+        android:text="Topings"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="10dp"
+        android:text="Cocao"
+        android:textColor="#CEFFFFFF"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="10dp"
+        android:text="Vanila"
+        android:textColor="#CEFFFFFF"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox1"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="10dp"
+        android:text="Nuts"
+        android:textColor="#CEFFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>
